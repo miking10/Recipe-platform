@@ -1,8 +1,8 @@
-import { doro } from "../assets/food/doro-wet.png";
-import { tibs } from "../assets/food/Tibs.png";
-import { genfo } from "../assets/food/Genfo.png";
+import doro from "../assets/food/doro-wet.png";
+import tibs from "../assets/food/Tibs.png";
+import genfo from "../assets/food/Genfo.png";
 
-export const bestFood = [
+export const bestFoods = [
   {
     image: doro,
     name: "Doro Wet",

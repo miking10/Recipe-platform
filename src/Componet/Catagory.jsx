@@ -1,17 +1,23 @@
-import tibs from "../assets/food/Tibs.png";
+import { bestFoods } from "../assets/data.js";
 
 const Catagory = () => {
   return (
     <div id="list-rcipe">
-      <div class="box">
-        <img src={tibs} alt="Tibs" />
-        <h2>Tibs</h2>
-        <p>facere sunt distinctio possimus molestias quam!</p>
-        <div class="min-message">
-          <button>20 min</button>
-          <button>Easy</button>
-        </div>
-      </div>
+      {bestFoods.map((food) => {
+        return (
+          <div id="list-rcipe" key={food.name}>
+            <div className="box">
+              <img src={food.image} alt={food.name} />
+              <h2>{food.name}</h2>
+              <p>{food.description}</p>
+              <div className="min-message">
+                <button>{food.timeTake}</button>
+                <button>{food.difficulty}</button>
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
