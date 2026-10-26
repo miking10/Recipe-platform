@@ -2,3 +2,273 @@
   margin: 0;
   padding: 0;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Nav */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 100;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.right-header .logo {
+  width: 60px;
+}
+.right-header h2 {
+  font-size: 30px;
+  font-family: "Metamorphous", serif;
+  /* color: #29c305; */
+}
+.r-header {
+  color: #29c305;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  gap: 30px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  font-size: 18px;
+  /* width: 70%; */
+}
+li a {
+  padding: 5px 5px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+}
+/* ICON */
+.home-icon {
+  width: 30px;
+}
+.recipe-ion {
+  width: 30px;
+}
+.add-icon {
+  width: 30px;
+}
+.search-bar {
+  width: 70%;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid #29c305;
+  padding: 5px 20px;
+  font-size: 17px;
+  box-shadow: 0 3px 10px gray;
+}
+.search-bar:focus {
+  border-color: #29c305;
+}
+/* Media */
+
+@media (max-width: 800px) {
+  nav ul li {
+    display: none;
+  }
+  .search-bar {
+    display: none;
+  }
+}
+
+/* Hero section */
+#hero-sec {
+  padding: 150px 30px;
+  height: 55vh;
+  /* background-color: #fcf1df; */
+  background: url(./assets/Ethio-food.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* filter: blur(3px); */
+
+  z-index: 100;
+}
+/* .backGroud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/Ethio-food.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  z-index: 1;
+} */
+
+.welcame-text {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-family: Verdana;
+  color: #79b133;
+}
+
+#hero-sec h1 {
+  font-size: 52px;
+  width: 75%;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#hero-sec img {
+  width: 450px;
+  border-radius: 20px;
+}
+.hero-text {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  color: white;
+}
+.hero-btn .btn {
+  padding: 10px 25px;
+  font-size: 17px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.arrow,
+.plue {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.browse-btn {
+  background-color: #1f411f;
+  color: white;
+  border: none;
+}
+.add-btn {
+  color: white;
+  border: 1px #1f411f solid;
+  margin-left: 15px;
+  background-color: transparent;
+}
+.add-btn:hover {
+  background-color: #124a24;
+  /* color: white; */
+  transition: 0.5s;
+}
+
+/* second section */
+.list-recipe-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.list-recipe-intro img {
+  width: 60px;
+}
+.list-recipe-intro h2 {
+  font-size: 38px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+.list-recipe-intro p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+#list-rcipe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  gap: 20px;
+}
+#list-rcipe img {
+  width: 100%;
+  border-radius: 25px;
+}
+#list-rcipe div {
+  width: 400px;
+  /* box-shadow: 0px 2px 20px gray; */
+}
+#list-rcipe .box {
+  border-radius: 25px;
+  box-shadow: 0px 3px 20px gray;
+  cursor: pointer;
+}
+#list-rcipe .box:hover {
+  transform: translateY(-8px);
+}
+#list-rcipe h2 {
+  font-family: Verdana;
+  font-size: 22px;
+  padding: 10px;
+}
+#list-rcipe p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  padding: 10px;
+}
+.min-message button {
+  border: none;
+  padding: 5px 40px;
+  font-size: 16px;
+  color: #285128;
+  background-color: white;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #124a24;
+  color: #fff;
+  padding: 35px 8%;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  gap: 40px;
+  margin-top: 70px;
+}
+
+.footer strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.footer p,
+.footer a {
+  display: block;
+  color: #d8e4d9;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.footer p {
+  max-width: 190px;
+  line-height: 1.7;
+}
+@media (max-width: 650px) {
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 30px 25px;
+    margin-top: 60px;
+  }
+}

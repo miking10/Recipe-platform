@@ -1,18 +1,16 @@
-import { Router, Routes } from "react-router";
+import { Link } from "react-router";
+import logo from "/logo.png";
 
 const Header = () => {
   return (
-    <div>
-        <Routes>
-            <Router Path='/' element=''
-        </Routes>
+    <header>
       <div className="right-header r-header">
-        <img src="../Image/logo.png" className="logo" alt="EthioRecipe Logo" />
+        <img src={logo} className="logo" alt="EthioRecipe Logo" />
         <h2>EthioRecipes</h2>
       </div>
       <nav>
         <ul>
-          <a href="index.html">
+          <Link to="/">
             <div className="icon-text">
               <img
                 src="../Image/icon/home-icon.png"
@@ -21,8 +19,8 @@ const Header = () => {
               />
               <li>Home</li>
             </div>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="recipe">
             <div className="icon-text">
               <img
                 src="../Image/icon/recipe-ion.png"
@@ -31,8 +29,8 @@ const Header = () => {
               />
               <li>Recipe</li>
             </div>
-          </a>
-          <a href="add-recipe.html">
+          </Link>
+          <Link to="/add-recipe">
             <div className="icon-text">
               <img
                 src="../Image/icon/add-icon.png"
@@ -41,7 +39,7 @@ const Header = () => {
               />
               <li>Add Recipe</li>
             </div>
-          </a>
+          </Link>
         </ul>
       </nav>
       <div className="left-header">
@@ -51,7 +49,7 @@ const Header = () => {
           type="text"
         />
       </div>
-    </div>
+    </header>
   );
 };
 
