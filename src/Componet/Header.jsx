@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 import logo from "/logo.png";
-import home from "/icons/home-icon.png";
-import recipe from "/icons/recipe-ion.png";
-import add from "/icons/add-icon.png";
+import homeIcon from "/icons/home-icon.png";
+import recipeIcon from "/icons/recipe-ion.png";
+import addIcon from "/icons/add-icon.png";
 
 const Header = () => {
   return (
@@ -15,19 +15,19 @@ const Header = () => {
         <ul>
           <Link to="/">
             <div className="icon-text">
-              <img src={home} className="home-icon" />
+              <img src={homeIcon} className="home-icon" />
               <li>Home</li>
             </div>
           </Link>
           <Link to="recipe">
             <div className="icon-text">
-              <img src={recipe} className="recipe-ion" alt="" />
+              <img src={recipeIcon} className="recipe-ion" alt="" />
               <li>Recipe</li>
             </div>
           </Link>
           <Link to="/add-recipe">
             <div className="icon-text">
-              <img src={add} className="add-icon" alt="" />
+              <img src={addIcon} className="add-icon" alt="" />
               <li>Add Recipe</li>
             </div>
           </Link>
