@@ -56,12 +56,15 @@ li a {
 /* ICON */
 .home-icon {
   width: 30px;
+  display: none;
 }
 .recipe-ion {
   width: 30px;
+  display: none;
 }
 .add-icon {
   width: 30px;
+  display: none;
 }
 .search-bar {
   width: 70%;
@@ -270,5 +273,13 @@ li a {
     grid-template-columns: 1fr;
     padding: 30px 25px;
     margin-top: 60px;
+  }
+  /* .right-header h2 {
+    display: none;
+  } */
+  .home-icon,
+  .recipe-ion,
+  .add-icon {
+    display: block;
   }
 }
