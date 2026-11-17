@@ -1,7 +1,9 @@
+import Intro from "../Componet/Intro";
+
 const AddRecipe = () => {
   return (
-    <div>
-      <h1>Add Recipe Page</h1>
+    <div className="page">
+      <Intro />
     </div>
   );
 };

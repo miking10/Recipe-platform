@@ -283,3 +283,308 @@ li a {
     display: block;
   }
 }
+
+/* Add recepe page css */
+.page {
+  max-width: 1120px;
+  margin: auto;
+  padding: 105px 25px 65px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.intro p {
+  color: #5c865d;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  margin: 5px 0 8px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.intro span {
+  color: var(--muted);
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipe-form {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 13px;
+  padding: 28px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.035);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 245px;
+  gap: 32px;
+}
+
+.section {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.section h2,
+.upload-card h2,
+.tips h2 {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 11px 12px;
+  outline: none;
+  font-size: 11px;
+  background: white;
+}
+
+input,
+select {
+  height: 40px;
+}
+
+textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #6a956c;
+  box-shadow: 0 0 0 3px rgba(58, 113, 62, 0.08);
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.help {
+  color: #858b85;
+  font-size: 10px;
+  margin: -8px 0 14px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upload-card,
+.tips {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 17px;
+}
+
+.upload-box {
+  min-height: 210px;
+  border: 1.5px dashed #bdc8bd;
+  border-radius: 8px;
+  background: #fbfcfa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+}
+
+.upload-box:hover {
+  border-color: var(--green);
+  background: #f6faf5;
+}
+
+.upload-icon {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #b6c5b5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--green);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.upload-box strong {
+  font-size: 11px;
+}
+
+.upload-box span {
+  color: #929791;
+  font-size: 9px;
+  margin-top: 3px;
+}
+
+.upload-box input {
+  display: none;
+}
+
+#preview {
+  margin-top: 10px;
+}
+
+#preview img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.tips {
+  background: #fff8e6;
+  border-color: #f3e5bf;
+}
+
+.tips ul {
+  padding-left: 17px;
+}
+
+.tips li {
+  color: #686b60;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+}
+
+.cancel,
+.publish {
+  height: 40px;
+  padding: 0 22px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.cancel {
+  background: white;
+  border: 1px solid #bfc6be;
+  cursor: pointer;
+}
+
+.publish {
+  background-color: #124a24;
+  color: white;
+  border: 1px solid #124a24;
+  cursor: pointer;
+}
+.cancel:hover {
+  background-color: #124a24;
+  color: white;
+}
+.publish:hover {
+  background-color: hsl(139, 61%, 30%);
+}
+
+.footer {
+  background: #124a24;
+  color: white;
+  padding: 35px 8%;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  gap: 40px;
+}
+
+.footer strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.footer p,
+.footer a {
+  display: block;
+  color: #d8e4d9;
+  font-size: 10px;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 900px) {
+  .main-nav {
+    gap: 15px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  @media (max-width: 800px) {
+    nav ul li {
+      display: none;
+    }
+    .search-bar {
+      display: none;
+    }
+  }
+
+  .page {
+    padding: 30px 15px 45px;
+  }
+
+  .recipe-form {
+    padding: 18px;
+  }
+
+  .two {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    justify-content: stretch;
+  }
+
+  .cancel,
+  .publish {
+    flex: 1;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    padding: 30px 25px;
+  }
+}
